@@ -1,7 +1,7 @@
 {
-  "name": "resources-flow-stenciljs",
+  "name": "kanban-webcomponent",
   "version": "0.0.1",
-  "description": "A resources flow kanban component in StencilJs",
+  "description": "A Resources Flow kanban web component build with stenciljs",
   "main": "dist/resources-flow.js",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
