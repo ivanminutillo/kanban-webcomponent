@@ -6,30 +6,39 @@ This project is based on [stencil component starter](https://github.com/ionic-te
 
 ## Custom TAGS available with this module
 
-#### <oce-kanban />
+#### oce-kanban
 *The whole kanban with bins and cards*
+`<oce-kanban bins=[...] />`
 ##### Props
-- bins: array<bin>
+- bins: `Array<bin>`
   
-#### <oce-bin />
-*A single bin, to be filled with cards*
+#### oce-bin
+*A single bin, to be filled with cards* 
+`<oce-bin 
+cards={this.cards}
+outputs={this.outputs}
+due={this.due}
+title={this.title}
+note={this.note} />`
+
 ##### Props
-- cards: array<card>
-- outputs: Array<output>,
+- cards: `Array<card>`,
+- outputs: `Array<output>`,
 - due: string,
 - title: string,
 - note: string
   
-#### <oce-card />
+#### oce-card
 *A single card that represent a commitment*
+`<oce-card members={this.members} due={this.due} note={this.note} action={()=>{console.log('hello')}} />`
 ##### Props
-- members: Array<members>,
+- members: `Array<members>`,
 - due: string,
 - note: string,
 - action: Function
   
-#### <oce-output />
-*The ouptut resource of a bin*
+#### oce-output
+*The ouptut resource of a bin* `<oce-output outputs={this.outputs} />`
 ##### Props
 - resourceClassifiedAs : {
     name: string
