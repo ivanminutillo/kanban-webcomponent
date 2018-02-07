@@ -6,13 +6,15 @@ This project is based on [stencil component starter](https://github.com/ionic-te
 
 ## Custom TAGS available with this module
 
-#### oce-kanban
+### oce-kanban
 *The whole kanban with bins and cards*
 `<oce-kanban bins=[...] />`
-##### Props
+**Props**
+
+
 - bins: `Array<bin>`
   
-#### oce-bin
+### oce-bin
 *A single bin, to be filled with cards* 
 `<oce-bin 
 cards={this.cards}
@@ -21,17 +23,22 @@ due={this.due}
 title={this.title}
 note={this.note} />`
 
-##### Props
+**Props**
+
+
 - cards: `Array<card>`,
 - outputs: `Array<output>`,
 - due: string,
 - title: string,
 - note: string
   
-#### oce-card
+### oce-card
 *A single card that represent a commitment*
 `<oce-card members={this.members} due={this.due} note={this.note} action={()=>{console.log('hello')}} />`
-##### Props
+
+**Props**
+
+
 - members: `Array<members>`,
 - due: string,
 - note: string,
@@ -39,7 +46,10 @@ note={this.note} />`
   
 #### oce-output
 *The ouptut resource of a bin* `<oce-output outputs={this.outputs} />`
-##### Props
+
+**Props**
+
+
 - resourceClassifiedAs : {
     name: string
   }
