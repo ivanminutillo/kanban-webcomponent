@@ -3,7 +3,7 @@ import {members} from '../interfaces'
 
 @Component({
   tag: 'oce-card',
-  styleUrl: 'style.scss',
+  styleUrl: 'style.css',
   shadow: true
 })
 export class Card {

@@ -3,7 +3,7 @@ import {output} from '../interfaces'
 
 @Component({
   tag: 'oce-bin',
-  styleUrl: 'style.scss',
+  styleUrl: 'style.css',
   shadow: true
 })
 export class Bin {

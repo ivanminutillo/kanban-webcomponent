@@ -3,7 +3,7 @@ import {bin} from '../interfaces'
 
 @Component({
   tag: 'oce-kanban',
-  styleUrl: 'style.scss',
+  styleUrl: 'style.css',
   shadow: true
 })
 export class Kanban {
