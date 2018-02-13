@@ -109,6 +109,36 @@ declare global {
 
 
 import {
+  Modal as OceModal
+} from './components/modal/index';
+
+declare global {
+  interface HTMLOceModalElement extends OceModal, HTMLElement {
+  }
+  var HTMLOceModalElement: {
+    prototype: HTMLOceModalElement;
+    new (): HTMLOceModalElement;
+  };
+  interface HTMLElementTagNameMap {
+    "oce-modal": HTMLOceModalElement;
+  }
+  interface ElementTagNameMap {
+    "oce-modal": HTMLOceModalElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "oce-modal": JSXElements.OceModalAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface OceModalAttributes extends HTMLAttributes {
+      data?: any;
+    }
+  }
+}
+
+
+import {
   Output as OceOutput
 } from './components/output/index';
 

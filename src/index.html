@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Kanban</title>
+  <title>Kanban2</title>
   <!--ADD KANBAN WEB COMPONENT-->
   <script src='https://unpkg.com/kanban-webcomponent/dist/resources-flow.js'></script>
   <!--ADD KANBAN STYLE-->
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/kanban-webcomponent/dist/styles/main.css">
+  <!-- <script src="/build/resources-flow.js"></script> -->
 </head>
 <body>
   <h1>A kanban</h1>
@@ -16,9 +17,8 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded",() => {
-      const cmp = document.querySelector('oce-kanban')
-      console.log(cmp)
-      cmp.bins = [
+      const kanban = document.querySelector('oce-kanban')
+      kanban.bins = [
         {
           due: '29 feb 2018',
           note: 'process example description',
@@ -40,6 +40,99 @@
         ]
         },
         {
+          due: '29 feb 2018',
+          note: 'process example description',
+          title: 'process example',
+          outputs: [{resourceClassifiedAs: {name: 'ciccio'}}, {resourceClassifiedAs: {name: 'ciccio'}}],
+          cards: [
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [{image: 'https://picsum.photos/100'},{image: 'https://picsum.photos/200'}],
+              due: '20 feb 2019'
+            },
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [],
+              due: '20 feb 2019'
+            }
+        ]
+        },{
+          due: '29 feb 2018',
+          note: 'process example description',
+          title: 'process example',
+          outputs: [{resourceClassifiedAs: {name: 'ciccio'}}, {resourceClassifiedAs: {name: 'ciccio'}}],
+          cards: [
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [{image: 'https://picsum.photos/100'},{image: 'https://picsum.photos/200'}],
+              due: '20 feb 2019'
+            },
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [],
+              due: '20 feb 2019'
+            },
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [{image: 'https://picsum.photos/100'},{image: 'https://picsum.photos/200'}],
+              due: '20 feb 2019'
+            },
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [],
+              due: '20 feb 2019'
+            }
+        ]
+        },{
+          due: '29 feb 2018',
+          note: 'process example description',
+          title: 'process example',
+          outputs: [{resourceClassifiedAs: {name: 'ciccio'}}, {resourceClassifiedAs: {name: 'ciccio'}}],
+          cards: [
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [{image: 'https://picsum.photos/100'},{image: 'https://picsum.photos/200'}],
+              due: '20 feb 2019'
+            },
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [],
+              due: '20 feb 2019'
+            }
+        ]
+        },{
+          due: '29 feb 2018',
+          note: 'process example description',
+          title: 'process example',
+          outputs: [{resourceClassifiedAs: {name: 'ciccio'}}, {resourceClassifiedAs: {name: 'ciccio'}}],
+          cards: [
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [{image: 'https://picsum.photos/100'},{image: 'https://picsum.photos/200'}],
+              due: '20 feb 2019'
+            },
+            {
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [],
+              due: '20 feb 2019'
+            },{
+              title: 'commitment1',
+              note: 'commitment test',
+              members: [{image: 'https://picsum.photos/100'},{image: 'https://picsum.photos/200'}],
+              due: '20 feb 2019'
+            }
+        ]
+        },{
           due: '29 feb 2018',
           note: 'process example description',
           title: 'process example',
