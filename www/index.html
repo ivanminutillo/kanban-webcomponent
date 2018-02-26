@@ -1,7 +1,17 @@
-<!DOCTYPE html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Kanban2</title> <script>/*! Built with http://stenciljs.com */
-!function(e,t,o,r,s,i,n,c,u,a,l){!function(e,t,o,r,s,i,n,c,u,a,l,d,p){(e.ResourcesFlow=e.ResourcesFlow||{}).components=l,(p=l.filter(function(e){return e[2]}).map(function(e){return e[0]})).length&&((d=t.createElement("style")).innerHTML=p.join()+"{visibility:hidden}.hydrated{visibility:inherit}",d.setAttribute("data-styles",""),t.head.insertBefore(d,t.head.firstChild)),(d=o[o.length-1])&&d.src&&(i=(p=d.src.split("/").slice(0,-1)).join("/")+(p.length?"/":"")+"resources-flow/"),(d=t.createElement("script")).src=i+(function(e,t,o,r){return t.search.indexOf("core=es5")>-1||"file:"===t.protocol||!e.customElements||!e.fetch||!(e.CSS&&e.CSS.supports&&e.CSS.supports("color","var(--c)"))||!("noModule"in o)||function(e){try{return new Function('import("")'),!1}catch(e){}return!0}()}(e,e.location,d)?"es5-build-disabled.js":"resources-flow.aykoxjao.js"),d.setAttribute("data-path",i),d.setAttribute("data-namespace","resources-flow"),t.head.appendChild(d)}(e,t,t.scripts,0,0,"/build/resources-flow/",0,0,0,0,[["oce-bin","trsxbix3",1,[["cards",1],["due",1,1,2],["note",1,1,2],["outputs",1],["title",1,1,2]],1],["oce-card","trsxbix3",1,[["action",1,1,1],["due",1,1,2],["members",1],["note",1,1,2]],1],["oce-kanban","trsxbix3",1,[["bins",1,1,2],["due",1,1,2]],1],["oce-modal","trsxbix3",1,[["data",1,1,1]],1],["oce-output","trsxbix3",1,[["outputs",1]],1]],void 0)}(window,document);</script>
-<link rel="canonical" href="/"></head>
-<body> <h1>A kanban</h1> <div> <oce-kanban bins=""> </oce-kanban></div> <script>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Kanban2</title>
+  <script src="/build/oce-kanban.js"></script>
+</head>
+<body>
+  <h1>A kanban</h1>
+  <div>
+    <oce-kanban bins='' />
+  </div>
+  <script>
     document.addEventListener("DOMContentLoaded",() => {
       const kanban = document.querySelector('oce-kanban')
       kanban.bins =  JSON.stringify([
@@ -15,4 +25,15 @@
       ])
       })
   </script>
-<script>"serviceWorker"in navigator&&"file:"!==location.protocol&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js").then(function(e){console.log("service worker registered",e),e.onupdatefound=function(){var n=e.installing;n.onstatechange=function(){"installed"===n.state&&window.dispatchEvent(new Event("swUpdate"))}}}).catch(function(e){console.log("service worker error",e)})});</script> </body></html>
+
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      // auto-unregister service worker during dev mode
+      navigator.serviceWorker.ready.then(function(registration) {
+        registration.unregister().then(function() { location.reload(true) });
+      });
+    }
+  </script>
+
+</body>
+</html>

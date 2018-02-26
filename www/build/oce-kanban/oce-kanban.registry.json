@@ -1,0 +1,24 @@
+{
+  "namespace": "OceKanban",
+  "fsNamespace": "oce-kanban",
+  "loader": "../oce-kanban.js",
+  "core": "oce-kanban.core.js",
+  "corePolyfilled": "oce-kanban.core.pf.js",
+  "components": {
+    "oce-bin": {
+      "$": "oce-bin"
+    },
+    "oce-card": {
+      "$": "oce-bin"
+    },
+    "oce-kanban": {
+      "$": "oce-bin"
+    },
+    "oce-modal": {
+      "$": "oce-bin"
+    },
+    "oce-output": {
+      "$": "oce-bin"
+    }
+  }
+}

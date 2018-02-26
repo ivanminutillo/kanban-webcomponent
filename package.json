@@ -2,13 +2,13 @@
   "name": "kanban-webcomponent",
   "version": "0.0.31",
   "description": "A Resources Flow kanban web component build with stenciljs",
-  "main": "dist/resources-flow.js",
+  "main": "dist/oce-kanban.js",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/resources-flow.js",
+  "browser": "dist/oce-kanban.js",
   "scripts": {
     "build": "sd concurrent \"postcss src/styles/main.css -o dist/styles/main.css css/*.css\" \"stencil build\" ",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
