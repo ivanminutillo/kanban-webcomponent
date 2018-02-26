@@ -1,6 +1,6 @@
 {
   "name": "kanban-webcomponent",
-  "version": "0.0.31",
+  "version": "0.1.31",
   "description": "A Resources Flow kanban web component build with stenciljs",
   "main": "dist/oce-kanban.js",
   "types": "dist/types/index.d.ts",
