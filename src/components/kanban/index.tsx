@@ -8,14 +8,15 @@ import {bin} from '../interfaces'
 })
 export class Kanban {
 
-  @Prop() bins: Array<bin>
+  @Prop() bins: string
   @Prop() due: string
 
   render() {
+    let bins = JSON.parse(this.bins)
     return (
     <div class="board_container">
       <div class="board">
-        {this.bins.map(bin => (
+        {bins.map(bin => (
           <oce-bin
             cards={bin.cards}
             outputs={bin.outputs}

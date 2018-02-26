@@ -5,7 +5,6 @@
  */
 
 import {
-  bin,
   members,
   output,
 } from './components/interfaces';
@@ -101,7 +100,7 @@ declare global {
   }
   namespace JSXElements {
     export interface OceKanbanAttributes extends HTMLAttributes {
-      bins?: Array<bin>;
+      bins?: string;
       due?: string;
     }
   }

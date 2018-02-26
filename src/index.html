@@ -18,7 +18,7 @@
   <script>
     document.addEventListener("DOMContentLoaded",() => {
       const kanban = document.querySelector('oce-kanban')
-      kanban.bins = [
+      kanban.bins =  JSON.stringify([
         {
           due: '29 feb 2018',
           note: 'process example description',
@@ -171,7 +171,7 @@
             }
         ]
         }
-      ]
+      ])
     })
   </script>
 </body>
