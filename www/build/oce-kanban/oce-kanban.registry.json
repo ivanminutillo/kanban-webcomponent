@@ -2,23 +2,23 @@
   "namespace": "OceKanban",
   "fsNamespace": "oce-kanban",
   "loader": "../oce-kanban.js",
-  "core": "oce-kanban.core.js",
-  "corePolyfilled": "oce-kanban.core.pf.js",
+  "core": "oce-kanban.roqok5lx.js",
+  "corePolyfilled": "oce-kanban.ta3kswmh.js",
   "components": {
     "oce-bin": {
-      "$": "oce-bin"
+      "$": "7fyfw8mk"
     },
     "oce-card": {
-      "$": "oce-bin"
+      "$": "7fyfw8mk"
     },
     "oce-kanban": {
-      "$": "oce-bin"
+      "$": "7fyfw8mk"
     },
     "oce-modal": {
-      "$": "oce-bin"
+      "$": "7fyfw8mk"
     },
     "oce-output": {
-      "$": "oce-bin"
+      "$": "7fyfw8mk"
     }
   }
 }
