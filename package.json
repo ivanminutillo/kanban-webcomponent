@@ -18,7 +18,7 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "0.2.3",
+    "@stencil/core": "^0.6.1",
     "postcss-cssnext": "3.1.0",
     "postcss-import": "11.0.0",
     "postcss-reporter": "5.0.0",

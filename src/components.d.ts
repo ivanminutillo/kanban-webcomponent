@@ -9,12 +9,21 @@ import {
   output,
 } from './components/interfaces';
 
+declare global {
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+  }
+}
+
+
+
 import {
   Bin as OceBin
 } from './components/bin/index';
 
 declare global {
-  interface HTMLOceBinElement extends OceBin, HTMLElement {
+  interface HTMLOceBinElement extends OceBin, HTMLStencilElement {
   }
   var HTMLOceBinElement: {
     prototype: HTMLOceBinElement;
@@ -48,7 +57,7 @@ import {
 } from './components/card/index';
 
 declare global {
-  interface HTMLOceCardElement extends OceCard, HTMLElement {
+  interface HTMLOceCardElement extends OceCard, HTMLStencilElement {
   }
   var HTMLOceCardElement: {
     prototype: HTMLOceCardElement;
@@ -81,7 +90,7 @@ import {
 } from './components/kanban/index';
 
 declare global {
-  interface HTMLOceKanbanElement extends OceKanban, HTMLElement {
+  interface HTMLOceKanbanElement extends OceKanban, HTMLStencilElement {
   }
   var HTMLOceKanbanElement: {
     prototype: HTMLOceKanbanElement;
@@ -112,7 +121,7 @@ import {
 } from './components/modal/index';
 
 declare global {
-  interface HTMLOceModalElement extends OceModal, HTMLElement {
+  interface HTMLOceModalElement extends OceModal, HTMLStencilElement {
   }
   var HTMLOceModalElement: {
     prototype: HTMLOceModalElement;
@@ -142,7 +151,7 @@ import {
 } from './components/output/index';
 
 declare global {
-  interface HTMLOceOutputElement extends OceOutput, HTMLElement {
+  interface HTMLOceOutputElement extends OceOutput, HTMLStencilElement {
   }
   var HTMLOceOutputElement: {
     prototype: HTMLOceOutputElement;

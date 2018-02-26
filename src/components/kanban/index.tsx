@@ -1,5 +1,5 @@
 import { Component, Prop } from '@stencil/core'
-import {bin} from '../interfaces'
+// import {bin} from '../interfaces'
 
 @Component({
   tag: 'oce-kanban',
